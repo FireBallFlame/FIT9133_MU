@@ -1,0 +1,16 @@
+def bubble_sort(the_list):
+    while True:
+        count = 0
+        for j in range(len(the_list)-1):
+            number_1 = the_list[j]
+            number_2 = the_list[j+1]
+            if the_list[j] > the_list[j+1]:
+                the_list[j] = number_2
+                the_list[j+1] = number_1
+                count +=1
+        if count == 0:
+            break
+    return the_list
+    
+    #Test
+    bubble_sort([9,8,4,3,11,28,64,78,15,45,66,77,89,789])
